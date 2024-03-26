@@ -1,0 +1,30 @@
+Program to find the roots of a quadratic, cubic or quartic equation
+
+PRINT prompt "Choose 1, 2 or 3 for quadratic, cubic or quartic respectively"
+INPUT choice
+IF choice is 1
+    INPUT a,b,c
+    COMPUTE d = b^2 - (4*a*c)
+    IF d is less than 0
+        PRINT "Can't solve!"
+    ELSE IF d is equal to 0
+        COMPUTE x = -b / (2*a)
+        PRINT x
+    ELSE
+        COMPUTE x1 = (-b + (square root of d)) / (2*a)
+        COMPUTE x2 = (-b - (square root of d)) / (2*a)
+        PRINT x1, x2
+ELSE IF choice is 2
+    INPUT a,b,c,d
+    FOR value in -100 to 100
+        IF (a*value^3)+(b*value^2)+(c*value)+d equals 0
+            PRINT value
+        END IF
+ELSE IF choice is 3
+    INPUT a,b,c,d,e
+    FOR value in -100 to 100
+        IF (a*value^4)+(b*value^3)+(c*value^2)+(d*value)+e equals 0
+            PRINT value
+        END IF
+ELSE
+    PRINT "Invalid Choice!"

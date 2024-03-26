@@ -1,0 +1,5 @@
+Program for store checkout after purchase
+
+IF purchase is not complete
+    Complete purchase
+PRINT receipt
