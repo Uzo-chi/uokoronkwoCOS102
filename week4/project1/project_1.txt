@@ -1,0 +1,22 @@
+PROGRAM TO PRINT A TABLE OF DETAILS ABOUT STUDENTS
+
+INPUT name
+WHILE name is not q
+    INPUT age, height, score, gender
+    IF gender is girl
+        assign name, age, height, score to girl section
+    ELSE IF gender is boy
+        assign name, age, height, score to boy section
+    ELSE
+        continue loop
+    
+    INPUT name
+END LOOP
+
+FOR name, age, height, score in girl section
+    PRINT name, age, height, score
+END LOOP
+
+FOR name, age, height, score in boy section
+    PRINT name, age, height, score
+END LOOP
