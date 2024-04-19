@@ -1,5 +1,4 @@
 import tkinter as tk
-from functools import partial
 
 def checkCompScience():
     window = tk.Tk()
