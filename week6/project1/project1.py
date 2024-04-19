@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 
 def showCharge(location, weight):
     window = tk.Toplevel(root)
