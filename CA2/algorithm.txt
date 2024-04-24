@@ -1,0 +1,33 @@
+function showCheckout {
+    Display gui and fields 
+    Input name in gui
+    Select dish from menu in gui
+    Input quantity in gui
+    Display add_button
+    Display submit_button
+    If add_button clicked
+        call function addOrder
+    If submit_button clicked
+        call function showBill
+}
+
+function addOrder {
+    Get dish, quantity
+    Get dish_price from dish
+    price = dish_price * quantity
+    Increment total by price
+}
+
+function showBill {
+    Display gui
+    Display name, total in gui
+}
+
+total = 0
+
+Display gui
+Display background_image in gui
+Display restaurant_menu in gui
+Display order_button in gui
+If order_button clicked
+    call function showCheckout
